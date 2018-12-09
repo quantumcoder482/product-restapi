@@ -1,4 +1,4 @@
-package com.product.webservice.products;
+package com.product.webservice.product;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

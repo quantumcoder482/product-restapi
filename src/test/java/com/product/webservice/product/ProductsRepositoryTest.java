@@ -1,4 +1,4 @@
-package com.product.webservice.products;
+package com.product.webservice.product;
 
 
 import org.junit.After;
@@ -39,8 +39,9 @@ public class ProductsRepositoryTest {
 
         //then
         Products products = productsList.get(0);
-        assertEquals(products.getName(),"shirt");;
+        assertEquals(products.getName(),"shirt");
         assertEquals(products.getComment(), "this is shirt");
+        assertEquals(products.getPrice(),Double.valueOf(30.5));
 
     }
 
@@ -61,7 +62,6 @@ public class ProductsRepositoryTest {
         Products products = productsList.get(0);
         assertTrue(products.getCreatedDate().isAfter(now));
         assertTrue(products.getModifiedDate().isAfter(now));
-
 
     }
 }

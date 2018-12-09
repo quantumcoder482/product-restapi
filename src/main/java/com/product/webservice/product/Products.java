@@ -1,7 +1,6 @@
-package com.product.webservice.products;
+package com.product.webservice.product;
 
 import lombok.*;
-import org.dom4j.swing.XMLTableColumnDefinition;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,6 +9,7 @@ import javax.persistence.Id;
 
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
+@Setter
 @Entity
 
 public class Products extends BaseTimeEntity {
@@ -24,14 +24,15 @@ public class Products extends BaseTimeEntity {
     @Column(columnDefinition = "TEXT", nullable = false)
     private String comment;
 
+    @Column(columnDefinition = "NUMBER")
     private Double price;
 
     @Builder
-    public Products(String name, String comment, Double price){
+    public Products(Long id, String name, String comment, Double price){
+        this.id = id;
         this.name = name;
         this.comment = comment;
         this.price = price;
     }
-
 
 }
