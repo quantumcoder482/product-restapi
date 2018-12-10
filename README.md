@@ -18,11 +18,12 @@ The project is created with Maven and Lombok, So you just need to import it to y
 ## Usage
 Run the project through the IDE and head our to [http://localhost:8080](http://localhost:8080)
 
-or 
+ or 
 
 run this command in the command line:
-````
+```
 mvn spring-boot:run
+```
 
 ## REST API End Points
 
