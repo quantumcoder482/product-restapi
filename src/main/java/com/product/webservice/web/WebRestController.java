@@ -141,13 +141,13 @@ public class WebRestController {
     }
 
 //    @DeleteMapping
-//    public void deleteProduct(@PathVariable Long id){
-//        productsRepository.deleteById(Long.valueOf(id));
+//    public void deleteProduct(@RequestParam Long id){
+//        productsRepository.deleteById(id);
 //    }
 //
 //    @DeleteMapping
-//    public void deleteOrder(@PathVariable Long id){
-//        ordersRepository.deleteById(Long.valueOf(id));
+//    public void deleteOrder(@RequestParam Long id){
+//        ordersRepository.deleteById(id);
 //    }
 
 }
